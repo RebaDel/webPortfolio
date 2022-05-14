@@ -1,0 +1,150 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/**
+* Layout
+*/
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  background-color: #283618;
+}
+
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%
+ }
+
+/**
+* Button Styles
+* https://fdossena.com/?p=html5cool/buttons/i.frag
+*/
+button {
+  color: #fefae0;
+  text-transform: uppercase;
+  background: #283618;
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+}
+
+/**
+* Blockquotes
+*/
+blockquote {
+  border-left: 0.25em solid #e5e5e5;
+  font-style: italic;
+  margin: 0 0 1.5625em;
+  padding-left: 1em;
+  padding-right: 1em;
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+}
+/*****
+* Header
+*****/
+
+header {
+  text-align: center;
+  background-color: #606c38;
+  color: #fefae0;
+}
+
+/*****
+* Main
+*****/
+
+main {
+  width: 80%;
+  background-color: #606c38;
+  float: left;
+  padding: 5px;
+  margin-left: 10%;
+}
+
+main a:link, main a:visited {
+color: #fefae0;
+text-decoration: none;
+}
+
+main a:hover {
+color: #dda15e;
+text-decoration: underline;
+}
+
+/*****
+* Footer
+*****/
+
+footer {
+clear: both;
+background-color: #606c38;
+color: #fefae0;
+text-align: center;
+margin-left: 10%;
+padding: 5px;
+font-size: 12pt;
+width: 80%;
+}
+
+footer a:link {
+color: #fefae0;
+text-decoration: none;
+}
+
+footer a:visited {
+color: #dda15e;
+text-decoration: none;
+}
+
+footer a:hover {
+text-decoration: underline;
+}
+
+/*****
+* Navigation Bar
+*****/
+
+nav {
+color: #fefae0;
+padding: 5px;
+width: 80%;
+margin-left: 5%;
+font-weight: bold;
+}
+
+nav ul {
+list-style: none;
+}
+
+nav ul li {
+float: left;
+padding: 5px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+display: block;
+width: 150px;
+margin-right: 4px;
+color: #fefae0;
+padding: 2px 4px 2px 4px;
+background-color: #606c38;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+color: #606c38;
+background-color: #fefae0;
+}

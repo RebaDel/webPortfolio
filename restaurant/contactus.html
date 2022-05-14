@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DeLaney's Deli and Rotisserie - Contact Us</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+form {
+	width: 50%;
+	color: #e8d7c4;
+	background-color: #6b8c62;
+	padding: 10px;
+	margin-left: 10%;
+	border: 5px ridge #5c4b44;
+}
+input, select, option, textarea {
+	display: block;
+	border: 1px solid #e8d7c4;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+input[type=radio], input[type=checkbox] {
+	display: inline-block;
+	padding: 5px;
+}
+button, input[type=submit], input[type=reset] {
+	background-color: #5c4b44;
+	color: #e8d7c4;
+}
+input[type=submit], input[type=reset] {
+	border-radius: 10px;
+	padding: 3px;
+	float: left;
+	margin-right: 10px;
+	border-color: #7c6b64;
+	border-style: outset;
+}
+input[type=number] {
+	background-color: #ffeddc;
+	color: #5c4b44;
+	border-color: #5c4b44;
+}
+</style>
+</head>
+
+<body id="container">
+
+<header>
+<img src="images/logo.jpg" width="200" height="150" alt="DeLaney's Deli and Rotisserie">
+<h1>Contact DeLaney's Deli and Rotisserie</h1>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home Page</a></li>
+<li><a href="aboutus.html">About Us</a>
+<li><a href="history.html">History</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="chef.html">Chef Henry</a></li>
+<li><a href="merchandise.html">Merchandise</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>Give Us Your Feedback:</h2>
+<p>DeLaney's Deli and Rotisserie
+<br>134 Main St.
+<br>Anytown, NC 12345
+<br>Call us: 555-555-5555
+<br><a href="mailto:delaneysdnr@gmail.com">Email us at delaneysdnr@gmail.com.</a></p>
+<br>
+<form action="#" method="post" autocomplete="on">
+
+	<h2>Enter your four-digit passcode, then click OK:</h2>
+	<input id="id1" type="number" min="1000" max="9999" name="code">
+	<button onclick="myFunction()" type="button">OK</button>
+	<p id="passcode"></p>
+	
+	<h2>Tell us about yourself:</h2>
+	<label for="title">Title:</label><br>
+	<select name="title" id="title">
+		<option value="#">Optional</option>
+		<option value="Ms.">Ms.</option>
+		<option value="Mr.">Mr.</option>
+		<option value="Mrs.">Mrs.</option>
+	</select>
+	<br>
+	<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="firstname" required>
+	<br>
+	<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lastname" required>
+	<br>
+	<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone">
+	<br>
+	<label for="email">Email:</label>
+		<input type="email" id="email" name="email" autocomplete="off" required>
+	<br>
+	<input type="checkbox" name="mailinglist" value="yes" id="mlist"><label for="mlist">Would you like to receive 
+exciting updates and weekly specials in your inbox?</label>
+	<br>
+	<h3 id="ratecolor">Please rate your most recent visit:</h3>
+		<input type="radio" name="rateus" value="5" id="fivestars"><label for="fivestars">5 Stars</label>
+		<input type="radio" name="rateus" value="4" id="fourstars"><label for="fourstars">4 Stars</label>
+		<input type="radio" name="rateus" value="3" id="threestars"><label for="threestars">3 Stars</label>
+		<input type="radio" name="rateus" value="2" id="twostars"><label for="twostars">2 Stars</label>
+		<input type="radio" name="rateus" value="1" id="onestar"><label for="onestar">1 Star</label>
+	<br><br>
+	<label>Tell us about your visit:</label>
+	<br>
+		<textarea name="feedback" rows="20" cols="50"></textarea>
+	<br>
+	<input type="submit" class="formbutton" value="Submit">
+	<input type="reset" class="formbutton" value="Clear Form">
+	<br>
+</form>
+</main>
+<footer>
+<p>
+<a href="index.html">Home Page</a> | <a href="aboutus.html">About Us</a> | <a href="history.html">History</a> | <a href="menu.html">Menu</a> | <a href="contactus.html">Contact Us</a> | <a href="chef.html">Chef Henry</a> | <a href="merchandise.html">Merchandise</a>
+</p>
+</footer>
+
+<script>
+	function myFunction(){
+	var inpObj = document.getElementById("id1");
+	if (inpObj.checkValidity() == false) {
+		document.getElementById("passcode").innerHTML = inpObj.validationMessage;
+	} else {
+		document.getElementById("passcode").innerHTML = "Passcode Valid";
+	}
+	}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg2915"
+   sodipodi:docname="ddrlogo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="C:\Users\marka\Documents\OneDrive\Documents\IT117\images\logo.jpg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2917"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="150.375"
+     inkscape:cy="408.125"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2912">
+    <linearGradient
+       id="linearGradient145798"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop145796" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient145754"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#7b9c48;stop-opacity:1;"
+         offset="0"
+         id="stop145752" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient145754"
+       id="linearGradient145756"
+       x1="28.915712"
+       y1="98.0983"
+       x2="84.568861"
+       y2="98.0983"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient145798"
+       id="linearGradient145804"
+       gradientUnits="userSpaceOnUse"
+       x1="28.915712"
+       y1="98.0983"
+       x2="84.568861"
+       y2="98.0983" />
+    <filter
+       inkscape:label="In and Out"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Inner colorized shadow, outer black shadow"
+       style="color-interpolation-filters:sRGB;"
+       id="filter149326"
+       x="-0.057224855"
+       y="-0.087667122"
+       width="1.1427536"
+       height="1.2186952">
+      <feGaussianBlur
+         result="result0"
+         in="SourceAlpha"
+         stdDeviation="4"
+         id="feGaussianBlur149320" />
+      <feOffset
+         dx="5"
+         dy="5"
+         result="result4"
+         id="feOffset149322" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result4"
+         operator="xor"
+         result="result3"
+         id="feComposite149324" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:25.4px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="122.81443"
+       y="99.680412"
+       id="text61371"><tspan
+         sodipodi:role="line"
+         id="tspan61369"
+         style="stroke-width:0.264583"
+         x="122.81443"
+         y="99.680412" /></text>
+    <rect
+       style="fill:#e8d7c4;stroke-width:3;stroke-linejoin:round;paint-order:fill markers stroke;fill-opacity:1"
+       id="rect864"
+       width="52.916668"
+       height="39.6875"
+       x="0"
+       y="86.842911"
+       inkscape:export-filename="C:\Users\marka\Documents\OneDrive\Documents\IT117\images\logo.jpg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#5c4b44;stroke-width:1.018;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke;filter:url(#filter149326)"
+       id="path147577"
+       cx="97.42765"
+       cy="146.14146"
+       rx="88.327003"
+       ry="57.655594"
+       inkscape:export-filename="C:\Users\marka\ddrlogo.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       transform="matrix(0.24552607,0,0,0.26365052,2.2619243,67.59426)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.94778px;line-height:1.25;font-family:'Kind  Witty';-inkscape-font-specification:'Kind  Witty';fill:#7b9c72;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       x="13.081584"
+       y="98.909645"
+       id="text10863"><tspan
+         sodipodi:role="line"
+         id="tspan10861"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.94778px;font-family:'Kind  Witty';-inkscape-font-specification:'Kind  Witty';fill:#7b9c72;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         x="13.081584"
+         y="98.909645">DeLaney's</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.25635px;line-height:1.25;font-family:'Andorra Personal Use';-inkscape-font-specification:'Andorra Personal Use';fill:#7b9c72;fill-opacity:1;stroke-width:0.0651702"
+       x="23.093727"
+       y="107.42252"
+       id="text33647"><tspan
+         sodipodi:role="line"
+         id="tspan33645"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Andorra Personal Use';-inkscape-font-specification:'Andorra Personal Use';fill:#7b9c72;fill-opacity:1;stroke-width:0.0651702"
+         x="23.093727"
+         y="107.42252">Deli &amp;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.55614px;line-height:1.25;font-family:sans-serif;fill:#7b9c72;fill-opacity:1;stroke-width:0.068293"
+       x="22.811499"
+       y="113.34629"
+       id="text101147"><tspan
+         sodipodi:role="line"
+         id="tspan101145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Andorra Personal Use';-inkscape-font-specification:'Andorra Personal Use';fill:#7b9c72;fill-opacity:1;stroke-width:0.068293"
+         x="22.811499"
+         y="113.34629">otisserie</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.3954px;line-height:1.25;font-family:sans-serif;fill:#7b9c72;fill-opacity:1;stroke-width:0.0749758"
+       x="3.149174"
+       y="116.99129"
+       id="text120867"><tspan
+         sodipodi:role="line"
+         id="tspan120865"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Andorra Personal Use';-inkscape-font-specification:'Andorra Personal Use';fill:#7b9c72;fill-opacity:1;stroke-width:0.0749758"
+         x="3.149174"
+         y="116.99129">R</tspan></text>
+  </g>
+</svg>

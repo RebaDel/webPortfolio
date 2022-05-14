@@ -1,0 +1,131 @@
+@charset "utf-8";
+body {
+background-color: #7b9c72;
+font-family: Georgia, "Times New Roman", serif;
+color: #5c4b44;
+line-height: 1.5;
+}
+h1 {
+color: #e8d7c4;
+}
+header {
+background-color: #5c4b44;
+color: #e8d7c4;
+text-align: center;
+padding : 5px;
+width: 80%;
+margin-left: 10%;
+}
+#container {
+width: 100%;
+}
+main {
+width: 80%;
+background-color: #e8d7c4;
+float: left;
+padding: 5px;
+margin-left: 10%;
+}
+main h2, h3, ul, ol, p {
+width: 90%;
+margin-left: 5%;
+}
+main a:link, main a:visited {
+color: #5c4b44;
+text-decoration: none;
+}
+main a:hover {
+color: #5c4b44;
+text-decoration: underline;
+}
+footer {
+clear: both;
+background-color: #5c4b44;
+color: #e8d7c4;
+text-align: center;
+margin-left: 10%;
+padding: 5px;
+font-size: 12pt;
+width: 80%;
+}
+footer a:link {
+color: #e8d7c4;
+text-decoration: none;
+}
+footer a:visited {
+color: #7b9c72;
+text-decoration: none;
+}
+footer a:hover {
+text-decoration: underline;
+}
+nav {
+color: #5c4b44;
+padding: 5px;
+width: 80%;
+margin-left: 5%;
+font-weight: bold;
+}
+nav ul {
+list-style: none;
+}
+nav ul li {
+float: left;
+padding: 5px;
+}
+nav ul li a:link, nav ul li a:visited {
+display: block;
+width: 150px;
+margin-right: 4px;
+color: #5c4b44;
+padding: 2px 4px 2px 4px;
+background-color: #e8d7c4;
+text-decoration: none;
+}
+nav ul li a:hover {
+color: #e8d7c4;
+background-color: #6c5b54;
+}
+.iconlist{
+list-style-type: square;
+}
+table {
+width: 80%;
+margin-left: 10%;
+padding: 10px;
+background-color: #7b9c72;
+color: #e8d7c4;
+border: 2px solid #5c4b44;
+border-collapse: collapse;
+}
+table th, td {
+padding: 5px;
+border: 1px solid #5c4b44;
+}
+#dashedborder{
+border-style: dashed;
+}
+.menudescription {
+text-align: center;
+font-family: Verdana, Tahoma, sans-serif;
+}
+.giftdescription {
+font-family: Verdana, Tahoma, sans-serif;
+}
+#contact {
+font-size: 0.8em;
+}
+#mugdesign {
+display: block;
+margin: 10px;
+float: left;
+}
+#ridgeborder { 
+border-style: ridge;
+}
+#merchannouncement {
+display: block;
+padding: 10px;
+font-family: "Comic-sans", cursive;
+text-align: center;
+}

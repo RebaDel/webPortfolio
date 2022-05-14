@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <title>TodoTracker</title>
+  <!--style>
+	body{
+		background-color: #7b9c72;
+		font-family: Georgia, "Times New Roman", serif;
+		color: #1c0b04;	
+	}
+	
+	.todo-list {
+		list-style: none;
+		padding-left: 10px;
+		width: 250px;
+	}
+	ul.todo-list.li {
+		color: #5c4b44;
+		font-size: 1.2em;
+		background-color: #e8d7c4;
+		padding: 5px;
+		margin-bottom: 5px;
+		border-radius: 2px;
+	}
+	button {
+		background-color: #e8d7c4;
+		color: #1c0b04;
+		padding: 2px;
+		border: 1px solid #1c0b04;
+	}
+form {
+	display: block;
+	color: #e8d7c4;
+	background-color: #6b8c62;
+	padding: 10px;
+	margin-left: 10%;
+	border: 2px solid #5c4b44;
+}
+input, select, option, textarea {
+	display: block;
+	border: 1px solid #e8d7c4;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+input[type=radio], input[type=checkbox] {
+	display: inline-block;
+	padding: 5px;
+}
+button, input[type=submit], input[type=reset] {
+	background-color: #5c4b44;
+	color: #e8d7c4;
+}
+input[type=submit], input[type=reset] {
+	border-radius: 10px;
+	padding: 15px;
+	float: left;
+	margin-right: 3px;
+	border-color: #7c6b64;
+	border-style: outset;
+}
+input[type=number] {
+	background-color: #ffeddc;
+	color: #5c4b44;
+	border-color: #5c4b44;
+}
+  </style-->
+</head>
+<body>
+  <header>
+  <h1 id="title">Todo Tracker</h1>
+  </header>
+  <nav>
+	<ul>
+	<li><a href="../index.html">Web Projects</a></li>
+	<li><a href="index.html">ToDo Tracker</a></li>
+	<li><a href="../matches/index.html">Memory Game</a></li>
+	<li><a href="../restaurant/index.html">Restaurant Sample</a></li>
+	<li><a href="../familyrecipes/index.html">Family Recipes</a></li>
+	<li><a href=".../quotes/index.html">Quote Machine</a></li>
+	</ul>
+  </nav>
+ <main> 
+  <form>
+    <input type="text" id="user-todo" placeholder="New Todo" required>
+  </form>
+
+  <h2>Todos</h2>
+  <ul id="todo-list">
+    
+  </ul>
+
+  <button id="clear">Clear All</button>
+</main>
+<footer>
+	<p>
+	<a href="../index.html">Web Projects</a> | <a href="index.html">To Do Tracker</a> | <a href="../matches/index.html">Memory Game</a> | <a href="../restaurant/index.html">Restaurant Sample</a> | <a href="../familyrecipes/index.html">Family Recipes</a> | <a href="../quotes/index.html">Quote Machine</a>
+	</p>
+</footer>
+  <script>
+  //Create variables using DOM
+  //querySelector finds the first item with that string
+  //getElementById finds items by CSS ids
+  var form = document.querySelector('form');
+  var todoList = document.getElementById('todo-list');
+  var button = document.querySelector('button');
+  var input = document.getElementById('user-todo');
+  //var todoArray = []; this resets the array whenever we refresh the page
+  //using a ternary conditional we can open the current array or, if there is none, we create a new one
+  var todoArray = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
+  //use localStorage setItem() method to set 'todos' to a string with 'JSON.stringify()'
+	//This is used because localStorage works exclusively with strings.
+  localStorage.setItem('todos', JSON.stringify(todoArray));
+  
+  //Declare a variable 'storage' that contains all the information in localStorage.
+  //This will use the JSON.parse() method that converts the strings from local storage into data we can access.
+  //The data from the web server is always a string, but JSON.parse() turns it into a JavaScript object.
+  var storage = JSON.parse(localStorage.getItem('todos'));
+  
+  //attach event listener to form to capture input on the 'submit' event and run the todoMaker method
+  form.addEventListener('submit', function(e){
+		e.preventDefault();//first, prevent the refresh that is the default action of submitting a form
+		todoArray.push(input.value);//push the captured text into the array
+		localStorage.setItem('todos', JSON.stringify(todoArray));//update the array in local storage
+		todoMaker(input.value);//use the captured text in the todoMaker method that adds it to your list
+		input.value = ''; //reset the value
+  });
+  //write a function to add the form entry to the list	
+  var todoMaker = function(text) {
+	var todo = document.createElement('li');//create the new list item
+	todo.textContent = text;//assign it the given text
+	todoList.appendChild(todo);//add it to the ul
+	}
+	
+  //populate the saved items into the ul
+	for (i = 0; i < storage.length; i++) {
+		todoMaker(storage[i]);
+		}
+		
+  //add a function using a while loop targeting the todoList ul 
+  button.addEventListener('click', function() {
+		while(todoList.firstChild){//is there anything in the list
+			todoList.removeChild(todoList.firstChild);//remove the first item from the list
+			}
+		localStorage.clear();
+		});
+
+  </script>
+  
+</body>
+</html>
